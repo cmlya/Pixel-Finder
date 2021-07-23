@@ -22,20 +22,11 @@ public class myPanel extends JPanel implements ActionListener {
                 g.setColor(clickedColor);
                 System.out.println(e.getXOnScreen() + ", " + e.getYOnScreen());
                 g.fillOval(e.getX(), e.getY(), 15, 15);
-/*                JLabel coordinatesLabel = new JLabel(e.getXOnScreen() + ", " + e.getYOnScreen());
-                coordinatesLabel.setBounds(e.getXOnScreen(), e.getYOnScreen(), 100, 100);
-                coordinatesLabel.setVisible(true);*/
                 g.setColor(labelColor);
                 g.drawString(e.getXOnScreen() + ", " + e.getYOnScreen(), e.getX(), e.getY());
                 g.dispose();
             }
         });
-    }
-
-    public void addLabel(JLabel label) {
-        myPanel.this.add(label);
-        this.add(label);
-        label.setVisible(true);
     }
 
     @Override
