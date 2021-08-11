@@ -23,7 +23,7 @@ public class myPanel extends JPanel implements ActionListener {
                 System.out.println(e.getXOnScreen() + ", " + e.getYOnScreen());
                 g.fillOval(e.getX(), e.getY(), 15, 15);
                 g.setColor(labelColor);
-                g.drawString(e.getXOnScreen() + ", " + e.getYOnScreen(), e.getX(), e.getY());
+                g.drawString(e.getXOnScreen() * 2 + ", " + e.getYOnScreen() * 2, e.getX(), e.getY());
                 g.dispose();
             }
         });
